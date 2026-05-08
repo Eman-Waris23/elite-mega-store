@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Elite Mega Store</title>
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+
+</head>
+<body>
+<div id="notif">Message</div>
+
+<!-- LOGIN -->
+<div id="loginPage">
+  <div class="login-card">
+    <h2>Welcome Back</h2>
+    <div style="color:#9fb7d8;margin-bottom:12px">Login to manage the store</div>
+    <input id="username" class="input" placeholder="Username (admin)" />
+    <input id="password" class="input" type="password" placeholder="Password (1234)" />
+    <button class="login-btn" onclick="doLogin()">Login</button>
+  </div>
+</div>
+
+
+
+<!-- APP -->
+<div id="app">
+  <div class="topbar">
+    <button class="topbtn" onclick="showProducts()">Products</button>
+    <button class="topbtn" onclick="showCart()">Cart</button>
+    <button class="topbtn" onclick="showAdmin()">Admin</button>
+    <button class="topbtn" onclick="showSales()">Sales</button>
+    <button class="topbtn" onclick="doLogout()">Logout</button>
+  </div>
+
+  <div class="hero">
+    <div class="hero-inner">
+      <h1>Elite Mega Store</h1>
+      <p>Your one-stop destination for premium products — fast delivery & secure checkout.</p>
+    </div>
+  </div>
+
+  <div class="container content-area" id="contentArea"></div>
+
+  <div id="successBox" class="success">Order placed successfully!</div>
+</div>
+
+
+</body>
+</html>
